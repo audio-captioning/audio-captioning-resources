@@ -27,6 +27,9 @@ This repository is maintained by K. Drossos.
    1. [GitHub repository with sentence embedding models](#gitHub-repository-with-sentence-embedding-models)
    1. [PORORO python NLP library](#pororo-python-nlp-library)
 1. [Audio processing tools and models](#audio-processing-tools-and-models) 
+   1. [AudioSet, a large audio dataset](#audioSet-dataset)
+   1. [YAMNet model](#yamnet-model)
+   1. [OpenL3 model](#openl3-model)
 
 ## Automated audio captioning datasets
 
@@ -83,6 +86,8 @@ References:
 
 1. K. Drossos, S. Lipping, and T. Virtanen, "Clotho: An audio captioning dataset," in ICASSP 2020-2020 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP). IEEE, 2020, pp. 736–740
 
+----
+
 ## Natural language processing tools and models
 
 We can suggest four resources for natural language processing.
@@ -120,11 +125,13 @@ called **PORORO**. [PORORO is available on GitHub](https://github.com/kakaobrain
 and consists of multiple neural models that can be used for processing
 the captions.
 
+----
+
 ## Audio processing tools and models
 
 We can suggest three resources for audio processing, where one is a dataset and two are pre-trained models.
 
-### AudioSet, a large audio dataset
+### AudioSet dataset
 
 AudioSet canbe [found online](https://research.google.com/audioset/) and
 consists of over 2M 10-second long audio clips, annotated by humans and
