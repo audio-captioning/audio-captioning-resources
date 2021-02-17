@@ -13,10 +13,9 @@ tools.
 ## Table of contents
 
 1. [Automated audio captioning datasets](#automated-audio-captioning-datasets)
-
-    1.[Audio caption dataset](#audio-caption-dataset)
-    2.[AudioCaps dataset](#audioCaps-dataset)
-    3.[Clotho dataset](#clotho-dataset)
+  1.[Audio caption dataset](#audio-caption-dataset)
+  2.[AudioCaps dataset](#audioCaps-dataset)
+  3.[Clotho dataset](#clotho-dataset)
 2. [Natural language processing tools and models](#natural-language-processing-tools-and-models)
 3. [Audio processing tools and models](#audio-processing-tools-and-models)
 
