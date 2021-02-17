@@ -25,7 +25,7 @@ At the moment, there are three AAC datasets. Here will be listed all three of th
 
 ### Audio caption dataset
 
-Audio Caption dataset can be [found online](https://www.github.com/richermans/AudioCaption)
+**Audio Caption** dataset can be [found online](https://www.github.com/richermans/AudioCaption)
 and consists of audio clips from two specific scenes, "Hospital" and "Car".
 Audio Caption contains around 3700 audio clips from "Hospital" scene and
 around 3600 audio clips from the "Car" scene. Every audio clip is
@@ -42,7 +42,7 @@ References:
 
 ### AudioCaps dataset
 
-AudioCaps can also be [found online](https://audiocaps.github.io) and
+**AudioCaps** can also be [found online](https://audiocaps.github.io) and
 consists of annotations of clips from the AudioSet dataset. AudioCaps
 has around 40 000 audio clips of 10 seconds, organized in three splits;
 a training slipt, a validation slipt, and a testing slipt. Training
@@ -58,7 +58,7 @@ References:
 
 ### Clotho dataset
 
-Clotho dataset can be [found online]() and consists of audio samples of
+**Clotho** dataset can be [found online]() and consists of audio samples of
 15 to 30 seconds duration, each audio sample having five captions of eight
 to 20 words length. There is a total of 4981 audio samples in Clotho, with
 24 905 captions (i.e. 4981 audio samples * 5 captions per each sample).
@@ -73,3 +73,39 @@ corresponding paper.
 References: 
 
 1. K. Drossos, S. Lipping, and T. Virtanen, "Clotho: An audio captioning dataset," in ICASSP 2020-2020 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP). IEEE, 2020, pp. 736–740
+
+## Natural language processing tools and models
+
+We can suggest four resources for natural language processing.
+
+### Natural Language ToolKit (NLTK) for Python. 
+**NLTK** can be [found online](https://www.nltk.org) and can be installed
+using the standard Python processes. NLTK has various tools that can be
+used, ranging from sentence tokenizers and part-of-speech tagging, to
+WordNet interface for querying WordNet about words (e.g. synonyms, parent
+terms, etc).
+
+   References: 
+   
+   1. S. Bird and E. Loper, "NLTK: the natural language toolkit," In Proceedings of the ACL Interactive Poster and Demonstration Sessions, Barcelona, Spain, Jul. 2004, pp. 214–217
+
+### Word2Vec model
+**Word2Vec** offers both a model to be trained on textual data and a
+pre-trained embeddings model, optimized on large corpus of text. You
+can [find Word2Vec online](https://code.google.com/archive/p/word2vec/). 
+
+   References: 
+   1. T. Mikolov, K. Chen, G. S. Corrado, and J. Dean, "Efficient estimation of word representations in vector space," In International Conference on Learning Representations, 2013
+   1. T. Mikolov, I. Sutskever, K. Chen, G. Corrado, and J. Dean, "Distributed representations of words and phrases and their compositionality," In Proceedings of the 26th International Conference on Neural Information Processing Systems - Volume 2, NIPS'13, 2013, pp. 3111–3119
+
+### GitHub repository with sentence embedding models
+There is a GitHub repository with Most (if not all) of them based on the Transformer model.
+The GitHub repo is called "Sentence Transformers: Multilingual Sentence
+Embeddings using BERT / RoBERTa / XLM-RoBERTa & Co. with PyTorch" and
+is [available online](https://github.com/UKPLab/sentence-transformers).
+   
+1. The fourth resource is a Python library with neural models for
+natural language processing, called **PORORO**. 
+[PORORO is available on GitHub](https://github.com/kakaobrain/pororo)
+and consists of multiple neural models that can be used for processing
+the captions.
