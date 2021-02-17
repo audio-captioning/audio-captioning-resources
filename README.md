@@ -13,7 +13,7 @@ tools.
 If you think of some other resource for AAC, please drop us an email
 or make an issue at this repository. 
 
-This repository is maintained by K. Drossos. 
+This repository is maintained by [K. Drossos](https://github.com/dr-costas). 
 
 ## Table of contents
 
