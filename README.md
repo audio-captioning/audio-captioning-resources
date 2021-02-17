@@ -17,6 +17,10 @@ tools.
    1. [AudioCaps dataset](#audioCaps-dataset)
    1. [Clotho dataset](#clotho-dataset)
 1. [Natural language processing tools and models](#natural-language-processing-tools-and-models) 
+   1. [Natural Language ToolKit (NLTK) for Python.](#natural-language-toolKit-(NLTK)-for-python)
+   1. [Word2Vec model](#word2Vec-model)
+   1. [GitHub repository with sentence embedding models](#gitHub-repository-with-sentence-embedding-models)
+   1. [PORORO python NLP library](#pororo-python-nlp-library)
 1. [Audio processing tools and models](#audio-processing-tools-and-models) 
 
 ## Automated audio captioning datasets
@@ -104,8 +108,8 @@ The GitHub repo is called "Sentence Transformers: Multilingual Sentence
 Embeddings using BERT / RoBERTa / XLM-RoBERTa & Co. with PyTorch" and
 is [available online](https://github.com/UKPLab/sentence-transformers).
    
-1. The fourth resource is a Python library with neural models for
-natural language processing, called **PORORO**. 
-[PORORO is available on GitHub](https://github.com/kakaobrain/pororo)
+### PORORO python NLP library
+There is a Python library with neural models for natural language processing,
+called **PORORO**. [PORORO is available on GitHub](https://github.com/kakaobrain/pororo)
 and consists of multiple neural models that can be used for processing
 the captions.
