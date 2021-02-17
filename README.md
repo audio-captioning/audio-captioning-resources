@@ -13,6 +13,7 @@ tools.
 ## Table of contents
 
 1. [Automated audio captioning datasets](#automated-audio-captioning-datasets)
+
     1.1. [Audio caption dataset](#audio-caption-dataset)
 	1.2. [AudioCaps dataset](#audioCaps-dataset)
 	1.3. [Clotho dataset](#clotho-dataset)
