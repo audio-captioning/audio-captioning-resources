@@ -1,2 +1,3 @@
-# audio-captioning-resources
-A list of resources that can help in research for automated audio captioning
+# Resources for automated audio captioning
+
+Welcome to the repository about automated audio captioning resources. 
