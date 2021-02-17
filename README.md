@@ -10,6 +10,11 @@ later on. The first section is about AAC datasets. The second is about NLP
 tools and models, and the third is about audio processing models and
 tools. 
 
+If you think of some other resource for AAC, please drop us an email
+or make an issue at this repository. 
+
+This repository is maintained by K. Drossos. 
+
 ## Table of contents
 
 1. [Automated audio captioning datasets](#automated-audio-captioning-datasets)   
@@ -89,18 +94,19 @@ used, ranging from sentence tokenizers and part-of-speech tagging, to
 WordNet interface for querying WordNet about words (e.g. synonyms, parent
 terms, etc).
 
-   References: 
+References: 
    
-   1. S. Bird and E. Loper, "NLTK: the natural language toolkit," In Proceedings of the ACL Interactive Poster and Demonstration Sessions, Barcelona, Spain, Jul. 2004, pp. 214–217
+1. S. Bird and E. Loper, "NLTK: the natural language toolkit," In Proceedings of the ACL Interactive Poster and Demonstration Sessions, Barcelona, Spain, Jul. 2004, pp. 214–217
 
 ### Word2Vec model
 **Word2Vec** offers both a model to be trained on textual data and a
 pre-trained embeddings model, optimized on large corpus of text. You
 can [find Word2Vec online](https://code.google.com/archive/p/word2vec/). 
 
-   References: 
-   1. T. Mikolov, K. Chen, G. S. Corrado, and J. Dean, "Efficient estimation of word representations in vector space," In International Conference on Learning Representations, 2013
-   1. T. Mikolov, I. Sutskever, K. Chen, G. Corrado, and J. Dean, "Distributed representations of words and phrases and their compositionality," In Proceedings of the 26th International Conference on Neural Information Processing Systems - Volume 2, NIPS'13, 2013, pp. 3111–3119
+References: 
+
+1. T. Mikolov, K. Chen, G. S. Corrado, and J. Dean, "Efficient estimation of word representations in vector space," In International Conference on Learning Representations, 2013
+1. T. Mikolov, I. Sutskever, K. Chen, G. Corrado, and J. Dean, "Distributed representations of words and phrases and their compositionality," In Proceedings of the 26th International Conference on Neural Information Processing Systems - Volume 2, NIPS'13, 2013, pp. 3111–3119
 
 ### GitHub repository with sentence embedding models
 There is a GitHub repository with Most (if not all) of them based on the Transformer model.
@@ -113,3 +119,43 @@ There is a Python library with neural models for natural language processing,
 called **PORORO**. [PORORO is available on GitHub](https://github.com/kakaobrain/pororo)
 and consists of multiple neural models that can be used for processing
 the captions.
+
+## Audio processing tools and models
+
+We can suggest three resources for audio processing, where one is a dataset and two are pre-trained models.
+
+### AudioSet, a large audio dataset
+
+AudioSet canbe [found online](https://research.google.com/audioset/) and
+consists of over 2M 10-second long audio clips, annotated by humans and
+drawn from YouTube. The ontology of AudioSet consists of over 630 audio
+event classes.
+
+References: 
+
+1. J. F. Gemmeke, D. P. W. Ellis, D. Freedman, A. Jansen, W. Lawrence, R. C. Moore, M. Plakal, and M. Ritter, "Audio set: an ontology and human-labeled dataset for audio events," In 42nd IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), May, 2017
+
+### YAMNet model
+
+YAMNet model can be [found online](https://github.com/tensorflow/models/tree/master/research/audioset/yamnet)
+and is focused on sound event tagging. YAMNet is trained on the AudioSet dataset
+and uses the Mobilenet_v1 architecture. Input audio to YAMNet is resampled to 16
+kHz, and input features are 64 log mel-band energies, for 96 frames of 10 ms. A
+description of YAMNet can be found at its online repository.
+
+References: 
+
+1. A. G. Howard, M. Zhu, B. Chen, D. Kalenichenko, W. Wang, T. Weyand, M. Andreetto, and H. Adam, "Mobilenets: efficient convolutional neural networks for mobile vision applications," arXiv:1704.04861, 2017
+
+### OpenL3 model
+
+OpenL3 model is [available online](https://github.com/marl/openl3) and is a
+modified version of the Look, Listen, and Learn model, focused on providing
+audio embeddings that perform well in various downstream tasks. OpenL3 is optimized
+mostly on music videos from the AudioSet dataset, and returns an embedding with
+6144 features, for every embedding frame. Additionall information can be found at
+the [online documentation of OpenL3](https://openl3.readthedocs.io/en/latest/tutorial.html).
+
+References:
+
+1. J. Cramer, H. Wu, J. Salamon, and J. P. Bello, "Look, listen, and learn more: design choices for deep audio embeddings," In ICASSP 2019 - 2019 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2019
